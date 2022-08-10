@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './searchbar.module.css';
+import PropTypes from 'prop-types';
 
 export const SearchBar = ({ onSubmit }) => {
   return (
@@ -20,4 +21,8 @@ export const SearchBar = ({ onSubmit }) => {
       </form>
     </header>
   );
+};
+
+SearchBar.propTypes = {
+  onSubmit: PropTypes.func,
 };
